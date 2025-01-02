@@ -1,1 +1,12 @@
-IyBBdXRvbWF0aW9uIEh1YiBEZXBsb3ltZW50CgojIyBDbHVzdGVyIFNldHVwCmBgYGJhc2gKZ2Nsb3VkIGNvbnRhaW5lciBjbHVzdGVycyBnZXQtY3JlZGVudGlhbHMgcHJpdmF0ZS1jbHVzdGVyLWF1dG8gLS1yZWdpb249dXMtd2VzdDEKYGBgCgojIyBDb250YWluZXIgRGVwbG95bWVudApgYGB5YW1sCmFwaVZlcnNpb246IGFwcHMvdjEKa2luZDogRGVwbG95bWVudAptZXRhZGF0YToKICBuYW1lOiBhdXRvbWF0aW9uLWNvbnRyb2xsZXIKc3BlYzoKICByZXBsaWNhczogMwpgYGA=
+# Automation Hub Setup
+
+## GKE Configuration
+- Region: us-west1
+- Auto-scaling: enabled
+- Monitoring: PC-Alerts
+
+## Quick Deploy
+```bash
+gcloud container clusters get-credentials private-cluster-auto --region=us-west1
+kubectl apply -f automation.yaml
+```
