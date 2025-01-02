@@ -1,16 +1,1 @@
-# Automation Hub Deployment
-
-## Cluster Setup
-```bash
-gcloud container clusters get-credentials private-cluster-auto --region=us-west1
-```
-
-## Container Deployment
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: automation-controller
-spec:
-  replicas: 3
-```
+IyBBdXRvbWF0aW9uIEh1YiBEZXBsb3ltZW50CgojIyBDbHVzdGVyIFNldHVwCmBgYGJhc2gKZ2Nsb3VkIGNvbnRhaW5lciBjbHVzdGVycyBnZXQtY3JlZGVudGlhbHMgcHJpdmF0ZS1jbHVzdGVyLWF1dG8gLS1yZWdpb249dXMtd2VzdDEKYGBgCgojIyBDb250YWluZXIgRGVwbG95bWVudApgYGB5YW1sCmFwaVZlcnNpb246IGFwcHMvdjEKa2luZDogRGVwbG95bWVudAptZXRhZGF0YToKICBuYW1lOiBhdXRvbWF0aW9uLWNvbnRyb2xsZXIKc3BlYzoKICByZXBsaWNhczogMwpgYGA=
